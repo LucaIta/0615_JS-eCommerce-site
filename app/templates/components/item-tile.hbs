@@ -1,6 +1,6 @@
 {{#each items as |item|}}
-  <p>Description: {{item.description}}</p>
-  <p>Cost {{item.cost}}</p>
+  {{#link-to 'item-detail' item.id}}<p>Description: {{item.description}}</p>{{/link-to}}
+  <p>Cost: {{item.cost}}</p>
   <p>Details: {{item.details}}</p>
   <p><img src="{{item.image}}" alt="{{item.description}}"/></p>
   <button {{action 'addToCart' item}}>Add to Cart</button>
