@@ -6,7 +6,7 @@ export default Model.extend({
   description: attr(),
   cost: attr(),
   details: attr(),
-  ratings: attr(),
+  rating: attr(),
   image: attr(),
   feedback: attr()
 });

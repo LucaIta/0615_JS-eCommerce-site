@@ -1,1 +1,9 @@
-{{yield}}
+<div class="container">
+  <form>
+    <div class="form-group">
+      <label for="rating">Item rating</label>
+      {{input id="rating" value=rating}}
+    </div>
+    <button {{action 'rateItem1' item}}>Rate!!!</button>
+  </form>
+</div>

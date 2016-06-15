@@ -8,7 +8,7 @@ export default Ember.Component.extend({
         cost: this.get('cost') ? parseInt(this.get('cost')): "",
         details: this.get('details') ? this.get('details'): "",
         image: this.get('image') ? this.get('image'): "",
-        ratings: "",
+        rating: "",
         feedback: "",
       };
       this.sendAction('saveNewItem2', params);
