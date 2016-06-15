@@ -1,3 +1,13 @@
-<h2 id="title">eCommerce Site</h2>
-
-{{outlet}}
+<div class="container">
+  <header>
+    <h1>E-commer Site</h1>
+    <br>
+    {{#link-to 'index'}}<h4>Homepage</h4>{{/link-to}}
+    {{#link-to 'admin'}}<h4>Admin page</h4>{{/link-to}}
+  </header>
+  <hr>
+    {{outlet}}
+  <hr>
+  <!-- <footer>
+  </footer> -->
+</div>
