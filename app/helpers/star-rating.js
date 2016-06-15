@@ -7,7 +7,7 @@ export function starRating(params/*, hash*/) {
   if (item.get('rating') !== "") {
     star = "";
     for (var i = 0; i < 5 && i < item.get('rating') ; i++) {
-      star = star + '<span class="glyphicon glyphicon-star"></span>';
+      star = star + '<span class="glyphicon glyphicon-star star-glyph"></span>';
     }
   }
 

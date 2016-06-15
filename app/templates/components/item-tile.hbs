@@ -1,9 +1,12 @@
 {{#each sortedItemsByRating as |item|}}
-  {{#link-to 'item-detail' item.id}}<h4>Description: {{item.description}}</h4>{{/link-to}}
-  <p>Cost: ${{item.cost}}</p>
-  <p>Details: {{item.details}}</p>
-  <p>Rating: {{star-rating item}}</p>
-  <p><img src="{{item.image}}" alt="{{item.description}}"/></p>
-  <button {{action 'addToCart' item}}>Add to Cart</button>
-  <br><br>
+  <div class="item">
+    {{#link-to 'item-detail' item.id}}<h3><strong>{{item.description}}</strong></h3>{{/link-to}}
+    <p>Cost: ${{item.cost}}</p>
+    <p>Details: {{item.details}}</p>
+    <p>Rating: {{star-rating item}}</p>
+    <p><img src="{{item.image}}" alt="{{item.description}}"/></p>
+    <button class="btn btn-primary btn-sm" {{action 'addToCart' item}}>Add to Cart</button>
+    <br>
+  </div>
+    <br>
 {{/each}}
