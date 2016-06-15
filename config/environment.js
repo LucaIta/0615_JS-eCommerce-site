@@ -4,14 +4,14 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'e-commerce-site',
     environment: environment,
-    baseURL: '/',
-    locationType: 'auto',
     firebase: {
       apiKey: "AIzaSyCPNVAjWP024rii5UcGSyUUCll5mx6fjj0",
       authDomain: "ecommerce-site-a81d2.firebaseapp.com",
       databaseURL: "https://ecommerce-site-a81d2.firebaseio.com",
-      storageBucket: "",
+      storageBucket: "ecommerce-site-a81d2.appspot.com",
     },
+    baseURL: '/',
+    locationType: 'auto',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
