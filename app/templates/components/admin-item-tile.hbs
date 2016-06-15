@@ -1,0 +1,8 @@
+{{#each items as |item|}}
+  <h4>Description: {{item.description}}</h4>
+  <p>Cost: ${{item.cost}}</p>
+  <p>Details: {{item.details}}</p>
+  <p><img src="{{item.image}}" alt="{{item.description}}"/></p>
+  <button {{action 'deleteItem' item}}>Delete</button>
+  <br><br>
+{{/each}}
