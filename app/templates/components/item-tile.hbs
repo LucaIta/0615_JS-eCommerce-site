@@ -2,6 +2,7 @@
   {{#link-to 'item-detail' item.id}}<p>Description: {{item.description}}</p>{{/link-to}}
   <p>Cost: {{item.cost}}</p>
   <p>Details: {{item.details}}</p>
+  <p>Rating: {{star-rating item}}</p>
   <p><img src="{{item.image}}" alt="{{item.description}}"/></p>
   <button {{action 'addToCart' item}}>Add to Cart</button>
   <br>
