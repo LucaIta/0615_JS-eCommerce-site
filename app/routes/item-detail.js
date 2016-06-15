@@ -9,6 +9,7 @@ export default Ember.Route.extend({
         item.set("rating", params["rating"]);
       }
     item.save();
+    this.transitionTo('index');
     }
   }
 });
