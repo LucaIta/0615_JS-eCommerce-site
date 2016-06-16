@@ -3,6 +3,8 @@
   <p>Cost: ${{item.cost}}</p>
   <p>Details: {{item.details}}</p>
   <p><img src="{{item.image}}" alt="{{item.description}}"/></p>
-  <button {{action 'deleteItem' item}}>Delete</button>
+  <br>
+  {{#link-to 'admin-update-item' item.id}}<button class="btn btn-primary">Update</button>{{/link-to}}
+  <button class="btn btn-danger" {{action 'deleteItem' item}}>Delete</button>
   <br><br>
 {{/each}}

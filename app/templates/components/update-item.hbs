@@ -1,0 +1,21 @@
+<div class="container">
+  <form>
+    <div class="form-group">
+      <label for="updateDescription">Update item description</label>
+      {{input value=description}}
+    </div>
+    <div class="form-group">
+      <label for="updateCost">Update item cost</label>
+      {{input value=cost}}
+    </div>
+    <div class="form-group">
+      <label for="updateDetails">Update item details</label>
+      {{input value=details}}
+    </div>
+    <div class="form-group">
+      <label for="updateImage">Update image URL</label>
+      {{input value=image}}
+    </div>
+    <button class="btn btn-primary" {{action 'updateItem1' item}}>Update Item</button>
+  </form>
+</div>

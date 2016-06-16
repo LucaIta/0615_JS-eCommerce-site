@@ -14,9 +14,11 @@ img {
 }
 
 .item {
-  border: solid black 1px;
-  border-radius: 5px;
-  padding: 5px;
+  border: solid red 1px;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  box-shadow: 5px 5px 10px red;
 }
 
 .star-glyph {

@@ -11,8 +11,9 @@ export default Ember.Route.extend({
       newItem.save();
       this.transitionTo('index');
     },
+
     deleteItem(item){
       return item.destroyRecord();
-    }
+    },
   }
 });
