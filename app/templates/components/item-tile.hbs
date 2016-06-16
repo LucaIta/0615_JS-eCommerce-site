@@ -11,6 +11,7 @@
     {{/if}}
     <p><img src="{{item.image}}" alt="{{item.description}}"/></p>
     <button class="btn btn-primary btn-sm" {{action 'addToCart' item}}>Add to Cart</button>
+    <button class="btn btn-danger btn-sm" {{action 'removeFromCart' item}}>Remove from Cart</button>
     <br>
   </div>
     <br>

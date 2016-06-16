@@ -5,12 +5,16 @@ export default Ember.Service.extend({
   total: 0,
 
   add(item){
+    if (this.get('items').contains(item)) {
+      alert("Item is already in cart");
+    } else {
+      this.get('items').pushObject(item);
+      this.set('total', this.get('total') + item.get('cost'));
+    }
+  },
 
-    this.get('items').pushObject(item);
-
-    // this.set('total', item.get('cost')); // this works !!!!
-    this.set('total', this.get('total') + item.get('cost'));
-    console.log(this.get('total'));
-
+  remove(item) {
+    this.get('items').removeObject(item);
+    this.set('total', this.get('total') - item.get('cost'));
   }
 });
