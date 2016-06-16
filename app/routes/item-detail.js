@@ -3,11 +3,11 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   actions: {
     rateItem3(params, item) {
-      if(params["rating"] !== null) {
-
-        // console.log(params[rating]);
-        item.set("rating", params["rating"]);
-      }
+      Object.keys(params).forEach(function(key){
+        if(params[key] !== null){
+          item.set(key, params[key]);
+        }
+      });
     item.save();
     this.transitionTo('index');
     }

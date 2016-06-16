@@ -4,6 +4,11 @@
     <p>Cost: ${{item.cost}}</p>
     <p>Details: {{item.details}}</p>
     <p>Rating: {{star-rating item}}</p>
+    {{#if item.feedback.review}}
+      <p>Review: ({{item.feedback.date}}) - {{item.feedback.review}}</p>
+    {{else}}
+      <p>Review: Not reviewed yet</p>
+    {{/if}}
     <p><img src="{{item.image}}" alt="{{item.description}}"/></p>
     <button class="btn btn-primary btn-sm" {{action 'addToCart' item}}>Add to Cart</button>
     <br>
